@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-container">
+          <a href="/" class="logo">YmMjSolution Pro</a>
+          <ul class="nav-links">
+            <li>
+              <a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/services"
+                class="<%= currentPage === 'services' ? 'active' : '' %>"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contact"
+                class="<%= currentPage === 'contact' ? 'active' : '' %>"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <header>
+        <h1>Contact Us</h1>
+        <p>Get in touch with our team of experts</p>
+      </header>
+
+      <main>
+        <div class="content-section">
+          <h2>Let's Start a Conversation</h2>
+          <p>
+            Ready to transform your business with innovative technology
+            solutions? We'd love to hear from you! Our team is standing by to
+            discuss your project requirements and provide expert guidance.
+          </p>
+        </div>
+
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <form action="/contact" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Interest</label>
+              <select
+                id="service"
+                name="service"
+                style="
+                  width: 100%;
+                  padding: 0.8rem;
+                  border: 2px solid #ecf0f1;
+                  border-radius: 5px;
+                  font-size: 1rem;
+                "
+              >
+                <option value="">Select a service</option>
+                <option value="web-development">Web Development</option>
+                <option value="mobile-app">Mobile App Development</option>
+                <option value="cloud-solutions">Cloud Solutions</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="data-analytics">Data Analytics</option>
+                <option value="ai-ml">AI & Machine Learning</option>
+                <option value="consultation">General Consultation</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Details *</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Please describe your project requirements, timeline, and any specific needs..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+
+        <div class="content-section">
+          <h2>Other Ways to Reach Us</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">📞</div>
+              <h3>Phone</h3>
+              <p><strong>Main Office:</strong><br />+44 0300 1212129</p>
+              <p><strong>Support:</strong><br />+44 0900 0808083</p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">✉️</div>
+              <h3>Email</h3>
+              <p>
+                <strong>General Inquiries:</strong
+                ><br />info@ymmjsolutionpro.com
+              </p>
+              <p><strong>Support:</strong><br />support@ymmjsolutionpro.com</p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">🏢</div>
+              <h3>Office</h3>
+              <p>
+                <strong>Headquarters:</strong><br />12-08 Tech Street<br />Innovation
+                Garden<br /> London, WC2E 12TB United Kingdom
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>Business Hours</h2>
+          <p>Our team is available to assist you during the following hours:</p>
+          <div class="time-info">
+            <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM (PST)</p>
+            <p><strong>Weekend:</strong> Closed</p>
+            <p>
+              <strong>Response Time:</strong> We typically respond to inquiries
+              within 24 hours during business days.
+            </p>
+          </div>
+          <p>
+            For urgent support requests outside business hours, please call our
+            emergency support line at +1 (555) 123-URGENT.
+          </p>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          &copy; 2025 YmMjSolution Pro. Available Monday-Friday, 9 AM - 5 PM.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-container">
+                <a href="/" class="logo">YmMjSolution Pro</a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Our Services</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <div class="closed-container">
+                <div class="closed-icon">🕐</div>
+                <h1>We're Currently Closed</h1>
+                <p>Thank you for visiting YmMjSolution Pro. Our services are currently unavailable as we operate only during business hours.</p>
+                
+                <div class="time-info">
+                    <h3>Current Time Information:</h3>
+                    <p><strong>Today is:</strong> <%= currentDay %></p>
+                    <p><strong>Current Time:</strong> <%= currentTime %></p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Our Business Hours</h2>
+                    <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
+                    <p><strong>Saturday - Sunday:</strong> Closed</p>
+                </div>
+
+                <div class="content-section">
+                    <h2>When We'll Be Back</h2>
+                    <p>Please visit us again during our operating hours. Our team will be ready to assist you with all your technology needs.</p>
+                    <p>You can also send us an email at <strong>info@ymmjsolutionpro.com</strong> and we'll respond during the next business day.</p>
+                </div>
+
+                <a href="/" class="btn" style="margin-top: 2rem;">Return to Homepage</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 YmMjSolution Pro. Available Monday-Friday, 9 AM - 5 PM.</p>
+        </footer>
+    </div>
+</body>
+</html>

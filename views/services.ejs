@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-container">
+          <a href="/" class="logo">YmMjSolution Pro</a>
+          <ul class="nav-links">
+            <li>
+              <a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/services"
+                class="<%= currentPage === 'services' ? 'active' : '' %>"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contact"
+                class="<%= currentPage === 'contact' ? 'active' : '' %>"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <header>
+        <h1>Our Services</h1>
+        <p>
+          Comprehensive technology solutions tailored to your business needs
+        </p>
+      </header>
+
+      <main>
+        <div class="content-section">
+          <h2>What We Offer</h2>
+          <p>
+            At YmMjSolution Pro, we provide a comprehensive range of technology
+            services designed to help your business thrive in today's digital
+            landscape. Our expert team delivers solutions that are scalable,
+            reliable, and aligned with your business objectives.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>
+              Custom web applications, responsive websites, and e-commerce
+              platforms built with modern technologies. We create digital
+              experiences that engage your users and drive results.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Native and cross-platform mobile applications for iOS and Android.
+              From concept to deployment, we build apps that users love to use.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">☁️</div>
+            <h3>Cloud Solutions</h3>
+            <p>
+              Cloud migration, infrastructure setup, and optimization services.
+              We help you leverage the power of cloud computing for scalability
+              and cost-effectiveness.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🔒</div>
+            <h3>Cybersecurity</h3>
+            <p>
+              Comprehensive security audits, vulnerability assessments, and
+              security implementation to protect your digital assets and
+              sensitive data.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Data Analytics</h3>
+            <p>
+              Business intelligence solutions, data visualization, and analytics
+              platforms to help you make data-driven decisions and gain valuable
+              insights.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🤖</div>
+            <h3>AI & Machine Learning</h3>
+            <p>
+              Artificial intelligence solutions, machine learning models, and
+              automation tools to streamline your processes and enhance
+              efficiency.
+            </p>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>Our Process</h2>
+          <h3>1. Discovery & Planning</h3>
+          <p>
+            We start by understanding your business requirements, challenges,
+            and goals. Our team conducts thorough research and analysis to
+            create a comprehensive project plan.
+          </p>
+
+          <h3>2. Design & Development</h3>
+          <p>
+            Using agile methodologies, we design and develop solutions that meet
+            your specifications while adhering to industry best practices and
+            quality standards.
+          </p>
+
+          <h3>3. Testing & Deployment</h3>
+          <p>
+            Rigorous testing ensures that your solution is bug-free and performs
+            optimally. We handle the deployment process and provide training for
+            your team.
+          </p>
+
+          <h3>4. Support & Maintenance</h3>
+          <p>
+            Our relationship doesn't end at deployment. We provide ongoing
+            support, maintenance, and updates to ensure your solution continues
+            to deliver value.
+          </p>
+        </div>
+
+        <div class="content-section">
+          <h2>Industries We Serve</h2>
+          <p>Our expertise spans across multiple industries, including:</p>
+          <p>
+            <strong>Healthcare:</strong> HIPAA-compliant solutions, telemedicine
+            platforms, and healthcare management systems.
+          </p>
+          <p>
+            <strong>Finance:</strong> Secure financial applications, trading
+            platforms, and compliance solutions.
+          </p>
+          <p>
+            <strong>E-commerce:</strong> Online stores, payment gateways, and
+            inventory management systems.
+          </p>
+          <p>
+            <strong>Education:</strong> Learning management systems, educational
+            apps, and virtual classroom solutions.
+          </p>
+          <p>
+            <strong>Manufacturing:</strong> IoT solutions, supply chain
+            management, and automation systems.
+          </p>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          &copy; 2025 YmMjSolution Pro. Available Monday-Friday, 9 AM - 5 PM.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

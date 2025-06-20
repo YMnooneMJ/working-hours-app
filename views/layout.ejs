@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-container">
+          <a href="/" class="logo">YmMjSolution Pro</a>
+          <ul class="nav-links">
+            <li>
+              <a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/services"
+                class="<%= currentPage === 'services' ? 'active' : '' %>"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contact"
+                class="<%= currentPage === 'contact' ? 'active' : '' %>"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <%- body %>
+
+      <footer>
+        <p>
+          &copy; 2025 YmMjSolution Pro. Available Monday-Friday, 9 AM - 5 PM.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
